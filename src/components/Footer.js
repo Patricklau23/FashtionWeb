@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='flex flex-col gap-4 mt-6'>
           <div>
             <img src={logoLight} alt="logoLight" className='w-[100px] ml-[-20px] mb-4' />
-            <img className='w-[600px] ml-[-30px]' src={paymentLogo} />
+            <img className='w-[600px] ml-[-30px]' src={paymentLogo} alt="payment" />
             <i className="bi bi-0-circle-fill" style={{ color: "red" }}></i>
           </div> 
 

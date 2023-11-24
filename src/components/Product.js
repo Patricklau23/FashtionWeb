@@ -13,7 +13,7 @@ const Product = () => {
     useEffect(()=>{
       //Access the state product details
         setDetails(location.state.item);
-    },[])
+    },[location.state.item])
 
   return (
     <div>

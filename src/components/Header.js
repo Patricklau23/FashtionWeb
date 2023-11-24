@@ -1,6 +1,5 @@
 import React from 'react'
 import { logo } from "../assets/index";
-import { cart } from "../assets/index";
 import { Link } from 'react-router-dom';
 import { BsCart } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
