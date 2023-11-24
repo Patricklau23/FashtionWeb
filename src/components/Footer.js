@@ -5,11 +5,10 @@ const Footer = () => {
   return (
     <div className='flex bg-black text-[#949494] py-20'>
       <div className='flex gap-[100px] max-w-screen-xl h-full mx-auto '>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 mt-6'>
           <div>
-            <img src={logoLight} alt="logoLight" className='w-[150px] ml-[-40px]' />
-            <p className='text-white text-sm tracking-wide ml-[-20px]'>@ logo.com</p>
-            <img className='w-[500px] ml-[-30px]' src={paymentLogo} />
+            <img src={logoLight} alt="logoLight" className='w-[100px] ml-[-20px] mb-4' />
+            <img className='w-[600px] ml-[-30px]' src={paymentLogo} />
             <i className="bi bi-0-circle-fill" style={{ color: "red" }}></i>
           </div> 
 

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import { leftArrow, rightArrow } from '../assets';
+import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
+
 
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -66,12 +67,12 @@ const Banner = () => {
             </div>
              
             <div className='absolute w-fit left-0 right-0 mx-auto flex gap-8 bottom-44'>
-                <div>            
-                    <img onClick={prevSlide} className='w-8 cursor-pointer' src={leftArrow}></img>
+                <div onClick={prevSlide} className='cursor-pointer text-[35px] hover:text-gray-200' >            
+                    <FiArrowLeft />
                 </div>       
 
-                <div>
-                    <img onClick={nextSlide} className='w-8 cursor-pointer' src={rightArrow}></img>
+                <div onClick={nextSlide} className='cursor-pointer text-[35px] hover:text-gray-200'>
+                    <FiArrowRight />
                 </div>
 
             </div>
