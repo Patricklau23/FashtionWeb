@@ -51,7 +51,7 @@ const Cart = () => {
 
   return (
     <div className='mx-[auto]'>
-      <img className='w-full h-60 object-cover' src={sea} alt='cartbg' />
+      <img className='w-full h-60 object-cover' src={sea} alt='background' />
         {productData.length === 0 ? (
           <div className='flex flex-col items-center mt-4 p-[50px]'>
             <h1 className=' text-orange-300 text-[25px] text-center'>
