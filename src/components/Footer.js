@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { logoLight, paymentLogo } from '../assets/index.js';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Footer = () => {
   return (
@@ -36,7 +37,7 @@ const Footer = () => {
           <li className='cursor-pointer text-red-100'>Press</li>
         </div>
 
-        <div className='hidden lg:flex-col gap-5 mt-6 list-none'>
+        <div className='hidden lg:flex lg:flex-col gap-5 mt-6 list-none'>
           <h2 className='text-2xl font-semibold'>Profile</h2>
           <li className="fa-solid fa-user">
             <span className='text-red-100 cursor-pointer text-[10px] ml-2'> My account</span>
@@ -64,10 +65,24 @@ const Footer = () => {
               <h2 className='text-2xl font-semibold whitespace-nowrap'>🎉Subscribe for Our Special Offers🎁</h2>
               <div className='flex flex-col'>
                 <input className='bg-transparent border px-[100px] py-3 text-sm' type="text" placeholder='Your email address...' />
-                <button className='text-sm border text-white border-t-0 hover:bg-gray-900 active:bg-white active:text-black py-1'>Subscribe</button>
+                <button onClick={()=>{toast.success(`Thank you for your subscription!`);}}
+                className='text-sm border text-white border-t-0 hover:bg-gray-900 active:bg-white active:text-black py-1'>Subscribe</button>
               </div>
         </div>
       </div>  
+
+      <ToastContainer 
+        position='top-left'
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='dark'
+    />
     </div>
     
   );
