@@ -8,7 +8,7 @@ const Shop = () => {
     const data = useLoaderData();
     useEffect(()=>{
         setProducts(data.data);
-    });
+    },[data.data]);
 
     return ( 
     <div>
