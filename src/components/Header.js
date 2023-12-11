@@ -91,20 +91,12 @@ const Header = () => {
                   Home
                 </li>
               </Link>
-              <li className='text-base text-black font-bold hover:text-orange-900
-                hover:underline underline-offset-2 decoration-[1px]
-                cursor-pointer duration-300'>
-                Pages</li>
               <Link to='/shop'>
                 <li className='text-base text-black font-bold hover:text-orange-900
                 hover:underline underline-offset-2 decoration-[1px]
                 cursor-pointer duration-300'>
                   Shop</li>
               </Link>
-              <li className='text-base text-black font-bold hover:text-orange-900
-                hover:underline underline-offset-2 decoration-[1px]
-                cursor-pointer duration-300'>
-                Element</li>
               <Link to='/blog'>
                 <li className='text-base text-black font-bold hover:text-orange-900
                     hover:underline underline-offset-2 decoration-[1px]
