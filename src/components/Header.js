@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { logo } from "../assets/index";
 import { Link } from 'react-router-dom';
 import { BsCart } from 'react-icons/bs';
